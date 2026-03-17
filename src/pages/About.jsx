@@ -10,6 +10,7 @@ export default function About() {
         <Card title="Mission" text="Enable access to education, healthcare, and dignified livelihoods." />
         <Card title="Vision" text="Inclusive communities where every person has opportunity and voice." />
         <Card title="Values" text="Integrity, equity, collaboration, compassion, and sustainability." />
+        
       </div>
     </section>
   );
