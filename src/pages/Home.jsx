@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
+import { Link } from "react-router-dom";
 import { db } from "../lib/firebase";
 
 export default function Home() {
@@ -41,12 +42,12 @@ export default function Home() {
             healthcare, and sustainable livelihood programs.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-emerald-400" href="/what-we-do">
+            <Link className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-emerald-400" to="/what-we-do">
               Explore Our Work
-            </a>
-            <a className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10" href="/contact">
+            </Link>
+            <Link className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10" to="/contact">
               Volunteer with Us
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -89,12 +90,12 @@ export default function Home() {
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              <a
+              <Link
                 className="rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-amber-300"
-                href="/contact"
+                to="/contact"
               >
                 Donate Now
-              </a>
+              </Link>
             </div>
           </div>
 
